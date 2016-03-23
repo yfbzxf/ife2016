@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 20px;/*不设置padding时，body的内容区域width就是浏览器宽度。现在总的宽度是width+2*padding即浏览器宽度*/
+}
+#box{
+    padding: 20px;
+    background-color: #eee;
+    border:1px solid #999;
+    position: relative;
+    overflow: hidden;/*
+                        *设置float属性的子元素会脱离文档流，撑不开父元素
+                        *清除子元素浮动，父元素高度自适应。
+                        */
+}
+/*团队logo*/
+.team{
+    width: 200px;
+    height: 120px;
+    border: 1px solid #999;
+    background-color: white;
+    position: relative;
+    float: left;
+}
+.logo{
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    /*border: solid 1px;*/
+}
+.name{
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+}
+/*个人logo*/
+.member{
+    width: 120px;
+    height: 326px;
+    border: 1px solid #999;
+    background-color: white;
+    float: right;
+}
+.member img{
+    padding:20px 20px 0 20px;
+    width: 80px;
+    height: 80px;
+}
+/*团队介绍*/
+.introduction{
+    border: 1px solid #999;
+    background-color: white;
+    width: auto;
+    margin:0 142px 0 222px;
+}
+p{
+    text-indent: 2em;
+    margin:20px 0 20px 0;
+}
+
